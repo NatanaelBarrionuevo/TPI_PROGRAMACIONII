@@ -1,0 +1,11 @@
+C:\Users\r4yn1\Desktop\utn\programacion II\Ejercicios\ProblemaBanco\bin\Debug\ProblemaBanco.exe.config
+C:\Users\r4yn1\Desktop\utn\programacion II\Ejercicios\ProblemaBanco\bin\Debug\ProblemaBanco.exe
+C:\Users\r4yn1\Desktop\utn\programacion II\Ejercicios\ProblemaBanco\bin\Debug\ProblemaBanco.pdb
+C:\Users\r4yn1\Desktop\utn\programacion II\Ejercicios\ProblemaBanco\obj\Debug\ProblemaBanco.csproj.AssemblyReference.cache
+C:\Users\r4yn1\Desktop\utn\programacion II\Ejercicios\ProblemaBanco\obj\Debug\ProblemaBanco.frmPrincipal.resources
+C:\Users\r4yn1\Desktop\utn\programacion II\Ejercicios\ProblemaBanco\obj\Debug\ProblemaBanco.frmNuevaCuenta.resources
+C:\Users\r4yn1\Desktop\utn\programacion II\Ejercicios\ProblemaBanco\obj\Debug\ProblemaBanco.Properties.Resources.resources
+C:\Users\r4yn1\Desktop\utn\programacion II\Ejercicios\ProblemaBanco\obj\Debug\ProblemaBanco.csproj.GenerateResource.cache
+C:\Users\r4yn1\Desktop\utn\programacion II\Ejercicios\ProblemaBanco\obj\Debug\ProblemaBanco.csproj.CoreCompileInputs.cache
+C:\Users\r4yn1\Desktop\utn\programacion II\Ejercicios\ProblemaBanco\obj\Debug\ProblemaBanco.exe
+C:\Users\r4yn1\Desktop\utn\programacion II\Ejercicios\ProblemaBanco\obj\Debug\ProblemaBanco.pdb
