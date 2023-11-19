@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FarmaciaBack.Datos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FarmaciaBack.Http
 {
-    class ClientSingleton
+    public class ClientSingleton
     {
         private static ClientSingleton instancia;
         private HttpClient client;
@@ -20,23 +21,19 @@ namespace FarmaciaBack.Http
                 instancia = new ClientSingleton();
             return instancia;
         }
-        public async Task<string> GetAsync(string url)
+        public async Task<ResponseHttp> GetAsync(string url) //los metodos siempre devuelven una cadena (json)
         {
             var result = await client.GetAsync(url);
-            var content = "";
-            if (result.IsSuccessStatusCode)
-                content = await result.Content.ReadAsStringAsync();
-            return content;
+            var content = await result.Content.ReadAsStringAsync();
+
+            return new ResponseHttp(result.StatusCode, content);
         }
-        public async Task<string> PostAsync(string url, string data)
+        public async Task<ResponseHttp> PostAsync(string url, string json) //los metodos siempre devuelven una cadena (json)
         {
-            StringContent content = new StringContent(data, Encoding.UTF8,
-            "application/json");
-            var result = await client.PostAsync(url, content);
-            var response = "";
-            if (result.IsSuccessStatusCode)
-                response = await result.Content.ReadAsStringAsync();
-            return response;
+            var result = await client.PostAsync(url, new StringContent(json, Encoding.UTF8, "Application/Json")); //quiero hacer un post y el contenido es una cadena formato HttpContent
+            var content = await result.Content.ReadAsStringAsync();
+
+            return new ResponseHttp(result.StatusCode, content);
         }
     }
 }

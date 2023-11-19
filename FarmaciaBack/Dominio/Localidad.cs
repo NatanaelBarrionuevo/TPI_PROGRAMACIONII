@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FarmaciaBack.Dominio
 {
-    internal class Localidad
+    public class Localidad
     {
     }
 }

@@ -29,6 +29,9 @@ namespace FarmaciaBack.Dominio
         {
 
         }
-
+        public override string ToString()
+        {
+            return Descripcion;
+        }
     }
 }

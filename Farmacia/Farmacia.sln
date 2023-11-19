@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmaciaFront", "FarmaciaFr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmaciaBack", "..\FarmaciaBack\FarmaciaBack.csproj", "{320D8456-16FC-4F13-83D0-A4F7F590E3FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmaciaAPI", "..\FarmaciaAPI\FarmaciaAPI.csproj", "{22B9B8F8-45C5-4EEB-8C7B-B310A919144F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{320D8456-16FC-4F13-83D0-A4F7F590E3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{320D8456-16FC-4F13-83D0-A4F7F590E3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{320D8456-16FC-4F13-83D0-A4F7F590E3FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B9B8F8-45C5-4EEB-8C7B-B310A919144F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B9B8F8-45C5-4EEB-8C7B-B310A919144F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B9B8F8-45C5-4EEB-8C7B-B310A919144F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B9B8F8-45C5-4EEB-8C7B-B310A919144F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

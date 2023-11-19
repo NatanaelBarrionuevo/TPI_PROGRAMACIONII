@@ -58,14 +58,15 @@
             label2 = new Label();
             textBox1 = new TextBox();
             gbEmpleado = new GroupBox();
+            label20 = new Label();
+            comboBox2 = new ComboBox();
+            checkBox4 = new CheckBox();
+            label7 = new Label();
+            dateTimePicker2 = new DateTimePicker();
+            label17 = new Label();
+            label18 = new Label();
+            textBox8 = new TextBox();
             gbProveedor = new GroupBox();
-            gbCliente = new GroupBox();
-            label25 = new Label();
-            comboBox6 = new ComboBox();
-            label24 = new Label();
-            comboBox5 = new ComboBox();
-            label23 = new Label();
-            comboBox4 = new ComboBox();
             label30 = new Label();
             comboBox9 = new ComboBox();
             label29 = new Label();
@@ -76,14 +77,13 @@
             textBox11 = new TextBox();
             label28 = new Label();
             textBox12 = new TextBox();
-            label20 = new Label();
-            comboBox2 = new ComboBox();
-            checkBox4 = new CheckBox();
-            label7 = new Label();
-            dateTimePicker2 = new DateTimePicker();
-            label17 = new Label();
-            label18 = new Label();
-            textBox8 = new TextBox();
+            gbCliente = new GroupBox();
+            label25 = new Label();
+            comboBox6 = new ComboBox();
+            label24 = new Label();
+            comboBox5 = new ComboBox();
+            label23 = new Label();
+            comboBox4 = new ComboBox();
             label19 = new Label();
             gbMedico = new GroupBox();
             label22 = new Label();
@@ -383,7 +383,7 @@
             gbEmpleado.Controls.Add(label17);
             gbEmpleado.Controls.Add(label18);
             gbEmpleado.Controls.Add(textBox8);
-            gbEmpleado.Location = new Point(0, 0);
+            gbEmpleado.Location = new Point(284, 35);
             gbEmpleado.Name = "gbEmpleado";
             gbEmpleado.Size = new Size(247, 172);
             gbEmpleado.TabIndex = 53;
@@ -391,12 +391,81 @@
             gbEmpleado.Text = "Empleado";
             gbEmpleado.Visible = false;
             // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(28, 111);
+            label20.Name = "label20";
+            label20.Size = new Size(51, 15);
+            label20.TabIndex = 64;
+            label20.Text = "Sucursal";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(85, 108);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(121, 23);
+            comboBox2.TabIndex = 63;
+            // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.Checked = true;
+            checkBox4.CheckState = CheckState.Checked;
+            checkBox4.Location = new Point(159, 145);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(15, 14);
+            checkBox4.TabIndex = 58;
+            checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(33, 73);
+            label7.Name = "label7";
+            label7.Size = new Size(46, 15);
+            label7.TabIndex = 57;
+            label7.Text = "Ingreso";
+            // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Format = DateTimePickerFormat.Short;
+            dateTimePicker2.Location = new Point(85, 67);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(121, 23);
+            dateTimePicker2.TabIndex = 56;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(112, 143);
+            label17.Name = "label17";
+            label17.Size = new Size(41, 15);
+            label17.TabIndex = 55;
+            label17.Text = "Activo";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(37, 32);
+            label18.Name = "label18";
+            label18.Size = new Size(42, 15);
+            label18.TabIndex = 54;
+            label18.Text = "Salario";
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(85, 29);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(121, 23);
+            textBox8.TabIndex = 53;
+            // 
             // gbProveedor
             // 
             gbProveedor.Controls.Add(label30);
             gbProveedor.Controls.Add(comboBox9);
             gbProveedor.Controls.Add(label29);
-            gbProveedor.Controls.Add(gbEmpleado);
             gbProveedor.Controls.Add(comboBox8);
             gbProveedor.Controls.Add(label26);
             gbProveedor.Controls.Add(comboBox7);
@@ -404,80 +473,13 @@
             gbProveedor.Controls.Add(textBox11);
             gbProveedor.Controls.Add(label28);
             gbProveedor.Controls.Add(textBox12);
-            gbProveedor.Location = new Point(12, 362);
+            gbProveedor.Location = new Point(284, 213);
             gbProveedor.Name = "gbProveedor";
             gbProveedor.Size = new Size(247, 172);
             gbProveedor.TabIndex = 57;
             gbProveedor.TabStop = false;
             gbProveedor.Text = "Proveedor";
             gbProveedor.Visible = false;
-            // 
-            // gbCliente
-            // 
-            gbCliente.Controls.Add(label25);
-            gbCliente.Controls.Add(comboBox6);
-            gbCliente.Controls.Add(label24);
-            gbCliente.Controls.Add(comboBox5);
-            gbCliente.Controls.Add(label23);
-            gbCliente.Controls.Add(comboBox4);
-            gbCliente.Location = new Point(0, 0);
-            gbCliente.Name = "gbCliente";
-            gbCliente.Size = new Size(247, 172);
-            gbCliente.TabIndex = 56;
-            gbCliente.TabStop = false;
-            gbCliente.Text = "Cliente";
-            gbCliente.Visible = false;
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Location = new Point(35, 128);
-            label25.Name = "label25";
-            label25.Size = new Size(58, 15);
-            label25.TabIndex = 72;
-            label25.Text = "Categoria";
-            // 
-            // comboBox6
-            // 
-            comboBox6.FormattingEnabled = true;
-            comboBox6.Location = new Point(100, 125);
-            comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(121, 23);
-            comboBox6.TabIndex = 71;
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Location = new Point(26, 85);
-            label24.Name = "label24";
-            label24.Size = new Size(67, 15);
-            label24.TabIndex = 70;
-            label24.Text = "Obra Social";
-            // 
-            // comboBox5
-            // 
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new Point(100, 82);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(121, 23);
-            comboBox5.TabIndex = 69;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Location = new Point(13, 41);
-            label23.Name = "label23";
-            label23.Size = new Size(80, 15);
-            label23.TabIndex = 68;
-            label23.Text = "Condicion Iva";
-            // 
-            // comboBox4
-            // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(100, 38);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(121, 23);
-            comboBox4.TabIndex = 67;
             // 
             // label30
             // 
@@ -562,75 +564,72 @@
             textBox12.Size = new Size(121, 23);
             textBox12.TabIndex = 43;
             // 
-            // label20
+            // gbCliente
             // 
-            label20.AutoSize = true;
-            label20.Location = new Point(28, 111);
-            label20.Name = "label20";
-            label20.Size = new Size(51, 15);
-            label20.TabIndex = 64;
-            label20.Text = "Sucursal";
+            gbCliente.Controls.Add(label25);
+            gbCliente.Controls.Add(comboBox6);
+            gbCliente.Controls.Add(label24);
+            gbCliente.Controls.Add(comboBox5);
+            gbCliente.Controls.Add(label23);
+            gbCliente.Controls.Add(comboBox4);
+            gbCliente.Location = new Point(284, 391);
+            gbCliente.Name = "gbCliente";
+            gbCliente.Size = new Size(247, 172);
+            gbCliente.TabIndex = 56;
+            gbCliente.TabStop = false;
+            gbCliente.Text = "Cliente";
+            gbCliente.Visible = false;
             // 
-            // comboBox2
+            // label25
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(85, 108);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 63;
+            label25.AutoSize = true;
+            label25.Location = new Point(35, 128);
+            label25.Name = "label25";
+            label25.Size = new Size(58, 15);
+            label25.TabIndex = 72;
+            label25.Text = "Categoria";
             // 
-            // checkBox4
+            // comboBox6
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Checked = true;
-            checkBox4.CheckState = CheckState.Checked;
-            checkBox4.Location = new Point(159, 145);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(15, 14);
-            checkBox4.TabIndex = 58;
-            checkBox4.UseVisualStyleBackColor = true;
+            comboBox6.FormattingEnabled = true;
+            comboBox6.Location = new Point(100, 125);
+            comboBox6.Name = "comboBox6";
+            comboBox6.Size = new Size(121, 23);
+            comboBox6.TabIndex = 71;
             // 
-            // label7
+            // label24
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(33, 73);
-            label7.Name = "label7";
-            label7.Size = new Size(46, 15);
-            label7.TabIndex = 57;
-            label7.Text = "Ingreso";
+            label24.AutoSize = true;
+            label24.Location = new Point(26, 85);
+            label24.Name = "label24";
+            label24.Size = new Size(67, 15);
+            label24.TabIndex = 70;
+            label24.Text = "Obra Social";
             // 
-            // dateTimePicker2
+            // comboBox5
             // 
-            dateTimePicker2.Format = DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new Point(85, 67);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(121, 23);
-            dateTimePicker2.TabIndex = 56;
+            comboBox5.FormattingEnabled = true;
+            comboBox5.Location = new Point(100, 82);
+            comboBox5.Name = "comboBox5";
+            comboBox5.Size = new Size(121, 23);
+            comboBox5.TabIndex = 69;
             // 
-            // label17
+            // label23
             // 
-            label17.AutoSize = true;
-            label17.Location = new Point(112, 143);
-            label17.Name = "label17";
-            label17.Size = new Size(41, 15);
-            label17.TabIndex = 55;
-            label17.Text = "Activo";
+            label23.AutoSize = true;
+            label23.Location = new Point(13, 41);
+            label23.Name = "label23";
+            label23.Size = new Size(80, 15);
+            label23.TabIndex = 68;
+            label23.Text = "Condicion Iva";
             // 
-            // label18
+            // comboBox4
             // 
-            label18.AutoSize = true;
-            label18.Location = new Point(37, 32);
-            label18.Name = "label18";
-            label18.Size = new Size(42, 15);
-            label18.TabIndex = 54;
-            label18.Text = "Salario";
-            // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(85, 29);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(121, 23);
-            textBox8.TabIndex = 53;
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Location = new Point(100, 38);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(121, 23);
+            comboBox4.TabIndex = 67;
             // 
             // label19
             // 
@@ -643,7 +642,6 @@
             // 
             // gbMedico
             // 
-            gbMedico.Controls.Add(gbCliente);
             gbMedico.Controls.Add(label22);
             gbMedico.Controls.Add(comboBox3);
             gbMedico.Controls.Add(label21);
@@ -695,9 +693,11 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(567, 577);
+            Controls.Add(gbCliente);
             Controls.Add(gbProveedor);
             Controls.Add(gbMedico);
             Controls.Add(label19);
+            Controls.Add(gbEmpleado);
             Controls.Add(gbDatos);
             Controls.Add(label1);
             Controls.Add(cboPersonal);
