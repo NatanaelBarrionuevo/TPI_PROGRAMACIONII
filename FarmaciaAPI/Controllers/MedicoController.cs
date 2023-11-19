@@ -1,5 +1,7 @@
 ﻿using FarmaciaBack.Dominio;
+using FarmaciaBack.Servicio.Implementacion;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -9,18 +11,19 @@ namespace FarmaciaAPI.Controllers
     [ApiController]
     public class MedicoController : ControllerBase
     {
-        //private MedicoDAO dao;
+
         public MedicoController()
         {
-            //dao = new MedicoDAO();
+
         }
         [HttpGet("Obrasocial")]
         public IActionResult GetObraSocial() // IActionResult devuelve un Json y un Codigo OK 200
-        {/*
-            if (dao.ObtenerObraSocial() != null)
+        {
+            List<ObraSocial> lista = Servicio.ObtenerIntancia().ConsultarObraSocial();
+            if (lista != null)
             {
-                return Ok(dao.ObtenerObraSocial());
-            }*/
+                return Ok(lista);
+            }
             return NoContent();
         }
         // POST api/<MedicoController>

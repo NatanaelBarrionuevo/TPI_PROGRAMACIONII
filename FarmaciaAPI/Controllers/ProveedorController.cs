@@ -1,4 +1,5 @@
 ﻿using FarmaciaBack.Dominio;
+using FarmaciaBack.Servicio.Implementacion;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -9,38 +10,41 @@ namespace FarmaciaAPI.Controllers
     [ApiController]
     public class ProveedorController : ControllerBase
     {
-        //private ProveedorDAO dao;
+        
         public ProveedorController()
         {
-            //dao = new ProveedorDAO();
+            
         }
         [HttpGet("CondicionIva")]
         public IActionResult GetCondicionIva() // IActionResult devuelve un Json y un Codigo OK 200
-        {/*
-            if (dao.ObtenerCondicionIva() != null)
+        {
+            List<CondicionIva> lista = Servicio.ObtenerIntancia().ConsultarCondicionIva();
+            if ( lista != null)
             {
-                return Ok(dao.ObtenerCondicionIva());
-            }*/
+                return Ok(lista);
+            }
             return NoContent();
         }
 
         [HttpGet("Transporte")]
         public IActionResult GetTransporte() // IActionResult devuelve un Json y un Codigo OK 200
-        {/*
-            if (dao.ObtenerTransporte() != null)
+        {
+            List<Transporte> lista = Servicio.ObtenerIntancia().ConsultarTransporte();
+            if (lista != null)
             {
-                return Ok(dao.ObtenerTransporte());
-            }*/
+                return Ok(lista);
+            }
             return NoContent();
         }
 
         [HttpGet("Tipo")]
         public IActionResult GetTipo() // IActionResult devuelve un Json y un Codigo OK 200
-        {/*
-            if (dao.ObtenerTipo() != null)
+        {
+            List<TipoProveedor> lista = Servicio.ObtenerIntancia().ConsultarTipoProveedor();
+            if (lista != null)
             {
-                return Ok(dao.ObtenerTipo());
-            }*/
+                return Ok(lista);
+            }
             return NoContent();
         }
 

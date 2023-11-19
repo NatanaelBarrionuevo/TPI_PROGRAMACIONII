@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivana\\Desktop\\Git Programacion\\TPI_PROGRAMACIONII\\FarmaciaBack\\FarmaciaBack.csproj": {}
+    "C:\\Users\\Usuario\\TP_PROG\\TPI_PROGRAMACIONII\\FarmaciaBack\\FarmaciaBack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivana\\Desktop\\Git Programacion\\TPI_PROGRAMACIONII\\FarmaciaBack\\FarmaciaBack.csproj": {
+    "C:\\Users\\Usuario\\TP_PROG\\TPI_PROGRAMACIONII\\FarmaciaBack\\FarmaciaBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivana\\Desktop\\Git Programacion\\TPI_PROGRAMACIONII\\FarmaciaBack\\FarmaciaBack.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\TP_PROG\\TPI_PROGRAMACIONII\\FarmaciaBack\\FarmaciaBack.csproj",
         "projectName": "FarmaciaBack",
-        "projectPath": "C:\\Users\\Ivana\\Desktop\\Git Programacion\\TPI_PROGRAMACIONII\\FarmaciaBack\\FarmaciaBack.csproj",
-        "packagesPath": "C:\\Users\\Ivana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivana\\Desktop\\Git Programacion\\TPI_PROGRAMACIONII\\FarmaciaBack\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\TP_PROG\\TPI_PROGRAMACIONII\\FarmaciaBack\\FarmaciaBack.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\TP_PROG\\TPI_PROGRAMACIONII\\FarmaciaBack\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ivana\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

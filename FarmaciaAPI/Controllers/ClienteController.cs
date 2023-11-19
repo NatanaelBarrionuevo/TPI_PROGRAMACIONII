@@ -1,4 +1,6 @@
 ﻿using FarmaciaBack.Dominio;
+using FarmaciaBack.Servicio.Implementacion;
+using FarmaciaBack.Servicio.Interfaz;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -9,38 +11,41 @@ namespace FarmaciaAPI.Controllers
     [ApiController]
     public class ClienteController : ControllerBase
     {
-        //private ClienteDAO dao;
+        
         public ClienteController()
         {
-            //dao = new ProveedorDAO();
+            
         }
         [HttpGet("CondicionIva")]
         public IActionResult GetCondicionIva() // IActionResult devuelve un Json y un Codigo OK 200
-        {/*
-            if (dao.ObtenerCondicionIva() != null)
+        {
+            List<CondicionIva> lista = Servicio.ObtenerIntancia().ConsultarCondicionIva();
+            if (lista != null)
             {
-                return Ok(dao.ObtenerCondicionIva());
-            }*/
+                return Ok(lista);
+            }
             return NoContent();
         }
 
         [HttpGet("Obrasocial")]
         public IActionResult GetObraSocial() // IActionResult devuelve un Json y un Codigo OK 200
-        {/*
-            if (dao.ObtenerObraSocial() != null)
+        {
+            List<ObraSocial> lista = Servicio.ObtenerIntancia().ConsultarObraSocial();
+            if (lista != null)
             {
-                return Ok(dao.ObtenerObraSocial());
-            }*/
+                return Ok(lista);
+            }
             return NoContent();
         }
 
-        [HttpGet("Categoria")]
-        public IActionResult GetTipo() // IActionResult devuelve un Json y un Codigo OK 200
-        {/*
-            if (dao.ObtenerCategoria() != null)
+        [HttpGet("CategoriaOS")]
+        public IActionResult GetTipoCategoriaOs() // IActionResult devuelve un Json y un Codigo OK 200
+        {
+            List<CategoriaOS> lista = Servicio.ObtenerIntancia().ConsultarCategoriaOS();
+            if (lista != null)
             {
-                return Ok(dao.ObtenerCategoria());
-            }*/
+                return Ok(lista);
+            }
             return NoContent();
         }
 
@@ -70,6 +75,8 @@ namespace FarmaciaAPI.Controllers
 
                 return StatusCode(500, "Error interno, intente nuevamente mas tarde");
             }
+
+            
         }
     }
 }
