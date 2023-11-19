@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Farmacia", "Farmacia.csproj", "{0F5C0B14-453D-4268-AFD8-6B47F384D192}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmaciaFront", "FarmaciaFront.csproj", "{0F5C0B14-453D-4268-AFD8-6B47F384D192}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmaciaBack", "..\..\..\TPI_PROGRAMACIONII_local\FarmaciaBack\FarmaciaBack.csproj", "{AEA63645-E4B7-4DC1-84E0-E65677344A4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmaciaBack", "..\FarmaciaBack\FarmaciaBack.csproj", "{320D8456-16FC-4F13-83D0-A4F7F590E3FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{0F5C0B14-453D-4268-AFD8-6B47F384D192}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F5C0B14-453D-4268-AFD8-6B47F384D192}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F5C0B14-453D-4268-AFD8-6B47F384D192}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEA63645-E4B7-4DC1-84E0-E65677344A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEA63645-E4B7-4DC1-84E0-E65677344A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEA63645-E4B7-4DC1-84E0-E65677344A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEA63645-E4B7-4DC1-84E0-E65677344A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320D8456-16FC-4F13-83D0-A4F7F590E3FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320D8456-16FC-4F13-83D0-A4F7F590E3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320D8456-16FC-4F13-83D0-A4F7F590E3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320D8456-16FC-4F13-83D0-A4F7F590E3FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

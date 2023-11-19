@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\TPI_PROGRAMACIONII_local\\Farmacia\\FarmaciaFront.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\TPI_PROGRAMACIONII_local\\Farmacia\\FarmaciaFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj",
-        "projectName": "Farmacia",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TPI_PROGRAMACIONII_local\\Farmacia\\FarmaciaFront.csproj",
+        "projectName": "FarmaciaFront",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\TPI_PROGRAMACIONII_local\\Farmacia\\FarmaciaFront.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\TPI_PROGRAMACIONII_local\\Farmacia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

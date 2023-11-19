@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\TPI_PROGRAMACIONII_local\\FarmaciaBack\\FarmaciaBack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\TPI_PROGRAMACIONII_local\\FarmaciaBack\\FarmaciaBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj",
-        "projectName": "Farmacia",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TPI_PROGRAMACIONII_local\\FarmaciaBack\\FarmaciaBack.csproj",
+        "projectName": "FarmaciaBack",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\TPI_PROGRAMACIONII_local\\FarmaciaBack\\FarmaciaBack.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\TPI_PROGRAMACIONII_local\\FarmaciaBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0-windows7.0": {
-            "targetAlias": "net6.0-windows",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,14 @@
         }
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,9 +59,6 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"

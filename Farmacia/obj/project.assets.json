@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TP_PROG\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj",
       "projectName": "Farmacia",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\TP_PROG\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\Farmacia.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\TP_PROG\\TPI_PROGRAMACIONII\\Farmacia\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\TP_PRObando\\TPI_PROGRAMACIONII\\Farmacia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
