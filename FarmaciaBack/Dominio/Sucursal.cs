@@ -8,10 +8,16 @@ namespace FarmaciaBack.Dominio
 {
     public class Sucursal
     {
+        private int id;
         private int cuit;
         private string direccion;
         private Barrio barrio;
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         public int Cuit
         {
             get { return cuit; }

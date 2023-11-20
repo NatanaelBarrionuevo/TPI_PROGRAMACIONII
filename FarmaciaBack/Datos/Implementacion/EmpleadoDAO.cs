@@ -22,17 +22,34 @@ namespace FarmaciaBack.Datos.Implementacion
             {
                 sucursal = new Sucursal()
                 {
-                    Cuit = Convert.ToInt32(fila["CUIT"]),
-                    Barrio = new Barrio(Convert.ToInt32(fila["ID_BARRIO"]), fila["BARRIO"].ToString()),
-                    Direccion = fila["DIRECCION"].ToString()
+                    Id = Convert.ToInt32(fila.ItemArray[0]),
+                    Barrio = new Barrio(Convert.ToInt32(fila.ItemArray[1]), fila.ItemArray[2].ToString()),
+                    Cuit = Convert.ToInt32(fila.ItemArray[3]),
+                    Direccion = fila.ItemArray[4].ToString()
                 };
                 lista.Add(sucursal);
             }
             return lista;
         }
-        public bool PostEmpleado()
+
+        public bool PostEmpleado(Empleado empleado)
         {
-            throw new NotImplementedException();
+            bool aux = false;
+            List<Parametro> parametros = new List<Parametro>()
+            {
+                new Parametro("@ID_PERSONA", empleado.Id_pers),
+                new Parametro("@FECHA_INGRESO", empleado.Fecha_ingreso),
+                new Parametro("@ACTIVO", empleado.Activo),
+                new Parametro("@SALARIO", empleado.Salario),
+                new Parametro("@ID_ROL", empleado.Rol.Id),
+                new Parametro("@ID_SUCURSAL", empleado.Sucursal.Id)
+            };
+            if (HelperDB.ObtenerInstancia().EjecutarSQL("SP_INSERT_EMPLEADO", parametros) == 1)
+            {
+                aux = true;
+            }
+            return aux;
         }
+
     }
 }

@@ -12,7 +12,18 @@ namespace FarmaciaBack.Datos.Implementacion
     {
         public bool PutMedico(Medico medico)
         {
-            throw new NotImplementedException();
+            bool aux = false;
+            List<Parametro> parametros = new List<Parametro>()
+                {
+                    new Parametro("@ID_PERSONA", medico.Id_pers),
+                    new Parametro("@MATRICULA", medico.Matricula)
+                };
+            if (HelperDB.ObtenerInstancia().EjecutarSQL("SP_INSERT_MEDICO", parametros) == 1)
+            {
+                aux = true;
+            }
+            return aux;
         }
+
     }
 }

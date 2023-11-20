@@ -63,7 +63,20 @@ namespace FarmaciaBack.Datos.Implementacion
 
         public bool PushCliente(Cliente cliente)
         {
-            throw new NotImplementedException();
+            bool aux = false;
+            List<Parametro> parametros = new List<Parametro>()
+            {
+                new Parametro("ID_PERSONA", cliente.Id_pers),
+                new Parametro("ID_CONDICION_IVA", cliente.Iva.Id),
+                new Parametro("ID_OBRA_SOCIAL", cliente.ObraSocial.Id)
+            };
+            if (HelperDB.ObtenerInstancia().EjecutarSQL("INSERT_CLIENTE", parametros) == 1)
+            {
+                aux = true;
+            }
+            return aux;
         }
     }
+
 }
+
